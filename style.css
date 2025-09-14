@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Rose Petals */
+.petal {
+  position: fixed;
+  top: -10vh;
+  font-size: 2rem;
+  color: #ff4d6d;
+  opacity: 0.9;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg) scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Navbar */
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-bar a {
+  color: #ffb6c1;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-bar a:hover { color: #ff69b4; }
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+.glow-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #fff;
+  text-shadow: 0 0 15px #ff69b4, 0 0 30px #ff1493;
+}
+.subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid #ffb6c1;
+  white-space: nowrap;
+  animation: typing 5s steps(40, end), blink 0.7s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #ffb6c1; }
+}
+
+/* Timer */
+.timer {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #ffb6c1;
+  text-shadow: 0 0 10px #ff69b4;
+}
+
+/* Buttons */
+.btn {
+  background: #ff1493;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover { background: #ff69b4; }
+
+/* Sections */
+.container { padding: 50px 20px; }
+h2 { color: #ffb6c1; text-align: center; margin-bottom: 20px; }
+
+/* Gallery Carousel */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 10px;
+}
+.slide {
+  min-width: 300px;
+  scroll-snap-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255,182,193,0.6);
+}
+.slide img { width: 100%; display: block; }
+
+/* Video */
+.video-frame {
+  display: flex;
+  justify-content: center;
+}
+.video-frame video {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255,20,147,0.8);
+}
+
+/* Messages */
+.msg {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  animation: fadeIn 3s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

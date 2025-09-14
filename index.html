@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Anniversary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating hearts background -->
+  <div class="hearts"></div>
+
+  <nav class="nav-bar">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Photo Gallery</a>
+    <a href="#messages">Special Messages</a>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <h1 class="glow-text">💖 Happy 1 Year & 4 Months Anniversary 💖</h1>
+      <p class="date">— 15th May 2024 —</p>
+      <p class="subtitle typewriter">I love you so much babe and you are my everything</p>
+      <div class="timer" id="timer">Loading...</div>
+      <div class="controls">
+        <button id="playPause" class="btn">🎵 Play Piano</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <p class="special">Our story is full of small moments that made this time unforgettable. Here’s some of the magic we’ve shared together ✨.</p>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="carousel">
+        <div class="slide"><img src="assets/photo1.jpg" alt="Photo 1"></div>
+        <div class="slide"><img src="assets/photo2.jpg" alt="Photo 2"></div>
+        <div class="slide"><img src="assets/photo3.jpg" alt="Photo 3"></div>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <h2>Our Special Video</h2>
+      <div class="video-frame glowing">
+        <video controls src="assets/video_2025-09-12_23-36-47.mp4"></video>
+      </div>
+    </section>
+
+    <section class="messages" id="messages">
+      <h2>Special Messages</h2>
+      <div class="msg">💌 "I love you so much babe and you are my everything"</div>
+    </section>
+  </main>
+
+  <audio id="bgAudio" loop src="assets/background.wav"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
